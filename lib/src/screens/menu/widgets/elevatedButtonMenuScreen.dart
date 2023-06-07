@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../cleaning/cleaning.dart';
+
 
 // * Customize buttons for menu screen
 class ElevatedButtonMenuScreen extends StatefulWidget {
@@ -33,7 +35,14 @@ class _ElevatedButtonMenuScreenState extends State<ElevatedButtonMenuScreen> {
           const SizedBox(height: 20),
           ElevatedButton(
             style: style,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Cleaning(),
+                ),
+              );
+            },
             child: const Text('Cleaning', style: TextStyle(fontSize: 20)),
           ),
           const SizedBox(height: 20),
@@ -65,3 +74,4 @@ class _ElevatedButtonMenuScreenState extends State<ElevatedButtonMenuScreen> {
     );
   }
 }
+

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:helpsam_flutter_version/src/screens/menu/widgets/elevatedButtonMenuScreen.dart';
-
 import 'elevatedButtonMineScreen.dart';
 
 // * - INFO comment
@@ -21,31 +19,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           body:  ElevatedButtonMainScreen(),
-          // bottomNavigationBar: BottomNavigationBar(
-          //   items: const [
-          //     BottomNavigationBarItem(
-          //         label: 'Home',
-          //         icon: Icon(
-          //           Icons.home,
-          //           color: Colors.black,
-          //           size: 35.0,
-          //         )),
-          //     BottomNavigationBarItem(
-          //         label: 'Add',
-          //         icon: Icon(
-          //           Icons.add,
-          //           color: Colors.black,
-          //           size: 35.0,
-          //         )),
-          //     BottomNavigationBarItem(
-          //         label: 'List',
-          //         icon: Icon(
-          //           Icons.list,
-          //           color: Colors.black,
-          //           size: 35.0,
-          //         )),
-          //   ],
-          // ),
         )
     );
   }
