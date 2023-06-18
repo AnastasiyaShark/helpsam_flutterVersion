@@ -10,7 +10,24 @@ class ElevatedButtonMainScreen extends StatefulWidget {
   State<ElevatedButtonMainScreen> createState() => _ElevatedButtonMainScreen();
 }
 
-class _ElevatedButtonMainScreen extends State<ElevatedButtonMainScreen> {
+class _ElevatedButtonMainScreen extends State<ElevatedButtonMainScreen>
+    with TickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )
+    ..repeat(reverse: true);
+  late final Animation<double> _animation = CurvedAnimation(
+    parent: _controller,
+    curve: Curves.elasticOut,
+  );
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final ButtonStyle style = ElevatedButton.styleFrom(
@@ -28,7 +45,11 @@ class _ElevatedButtonMainScreen extends State<ElevatedButtonMainScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Image.asset('assets/images/letter-s.png', height: 175, width: 175),
+          RotationTransition(
+            turns: _animation,
+
+            child: Image.asset(
+                'assets/images/letter-s.png', height: 175, width: 175),),
           const SizedBox(height: 50),
           ElevatedButton(
             style: style,

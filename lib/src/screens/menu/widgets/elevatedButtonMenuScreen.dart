@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../cleaning/cleaning.dart';
+import '../../motivation/motivation.dart';
 
 
 // * Customize buttons for menu screen
@@ -66,7 +67,14 @@ class _ElevatedButtonMenuScreenState extends State<ElevatedButtonMenuScreen> {
           const SizedBox(height: 20),
           ElevatedButton(
             style: style,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>  Motivation(),
+                ),
+              );
+            },
             child: const Text('Motivation', style: TextStyle(fontSize: 20)),
           ),
         ],
