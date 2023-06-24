@@ -34,6 +34,8 @@ dependencies:
   # Анимированный текст
   animated_text_kit: ^4.2.2
   path: ^1.8.3
+  # Firebase DB
+  cloud_firestore: ^4.8.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -47,8 +49,8 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  # TODO change icon
-  image_path: "assets/images/letter-s.png"
+  # run  flutter pub run flutter_launcher_icons if you want to change
+  image_path: "assets/images/letter-s_white.png"
   min_sdk_android: 21 # android   min sdk min:16, default 21
 
   # encourage good coding practices. The lint set provided by the package is

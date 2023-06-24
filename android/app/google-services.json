@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248137638089",
+    "project_id": "helpsam-67bd3",
+    "storage_bucket": "helpsam-67bd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248137638089:android:f1899f17a1e34152b72d18",
+        "android_client_info": {
+          "package_name": "com.example.helpsam_flutter_version"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248137638089-k3lqsg0aq9724iqn6uqeckbab72vdrde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9BJyqDZrorYqQVn7VTmiW3QTwKpsIWp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248137638089-k3lqsg0aq9724iqn6uqeckbab72vdrde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'elevatedButtonMineScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 // * - INFO comment
 // ! - WARN comment
 // TODO - TODO comment
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
